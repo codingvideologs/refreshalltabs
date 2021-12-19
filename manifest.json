@@ -1,0 +1,37 @@
+{
+  "name": "Refresh All Tabs",
+  "description": "The extension to refresh all tabs.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "*://*/*"
+  ],
+  "permissions": [
+    "tabs",
+    "storage",
+    "activeTab",
+    "scripting",
+    "notifications"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/reload16.png",
+      "32": "/images/reload32.png",
+      "48": "/images/reload48.png",
+      "128": "/images/reload128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/reload16.png",
+    "32": "/images/reload32.png",
+    "48": "/images/reload48.png",
+    "128": "/images/reload128.png"
+  },
+  "options_page": "options.html"
+}
